@@ -9,3 +9,6 @@ vendor/
 html/
 scripts/
 text/
+
+# Apple OS
+.DS_Store
