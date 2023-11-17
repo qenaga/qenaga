@@ -1,0 +1,97 @@
+---
+layout: default
+---
+
+{% comment %} Category title now in page header
+{% if page.description %}
+	<h1>{{page.description}}</h1>
+ {% else %}
+	<h1>{{page.title}}</h1>
+ {% endif %}
+{% endcomment %}
+ 
+{{content}}
+
+<div class="PageNavigation">
+  {% if page.section > 1 %}
+  	{% assign num = page.section | minus: 1 %}
+  {% else %}
+  	{% assign num = site.number_categories %}
+  {% endif %}
+  	{% assign new = site.data.categories | where: "secnum",num | first %}
+  	{% if new.name.size > 0 %}
+		{% assign lnk = new.name | prepend: "phrases/" %}
+		<a class="prev" href="{% link {{lnk}}  %}">&laquo; {{ new.section }}</a>
+    {% endif %}
+  {% if page.section < site.number_categories %}
+  	{% assign num = page.section | plus: 1 %}
+  {% else %}
+  	{% assign num = 1 %}
+  {% endif %}
+	{% assign new = site.data.categories | where: "secnum",num | first %}
+	{% if new.name.size > 0 %}
+		{% assign lnk = new.name | prepend: "phrases/" %}
+		<a class="next" href="{% link {{lnk}}  %}"> {{ new.section }} &raquo;</a>
+	{% endif %}
+</div>
+
+
+{% assign thephrases = site.data.phrases | where:"secnum",page.section %}
+{% for row in thephrases %}
+	{% if row.audio %}
+		{% assign theaudio = row.audio %}
+	{% else %}
+		{% if row.secnum.size == 1 %}
+			{% assign category = row.secnum | prepend: "0" %}
+		{% else %}
+			{% assign category = row.secnum %}
+		{% endif %}
+		{% if row.order.size == 1 %}
+			{% assign track = row.order | prepend: "0" %}
+		{% else %}
+			{% assign track = row.order %}
+		{% endif %}
+		{% assign theaudio = category | prepend: "tnc-" | append: "-" | append: track | append: ".mp3" %}
+	{% endif %}
+	<div class="audiobox">
+	<div class="text">
+		<span class="tnc">{{row.tnc}}</span><br/>
+		 <span class="gloss">{{row.eng}}</span></td>
+	</div>
+   <div class="audio"><audio src="{{site.baseurl}}/{{site.audiopath}}/{{theaudio}}" controls type="audio/mpeg">Your browser does not support the audio tag.</audio>
+   <!-- <br/>{{site.baseurl}}/{{site.audiopath}}/{{theaudio}}  -->
+   </div></div> 
+	<hr/>
+{% comment %}
+   <!--
+     <p><audio src="{{site.audiourl}}/{{row.audio}}" controls type="audio/mpeg" style="float:left;margin-right:20px;width:300px;">Your browser does not support the audio tag.</audio>
+   <b>{{row.tnc}}</b><br/> {{row.eng}}</p>
+   -->
+{% endcomment %} 
+{% endfor %}
+
+
+<div class="PageNavigationBottom">
+  {% if page.section > 1 %}
+  	{% assign num = page.section | minus: 1 %}
+  {% else %}
+  	{% assign num = site.number_categories %}
+  {% endif %}
+  	{% assign new = site.data.categories | where: "secnum",num | first %}
+  	{% if new.name.size > 0 %}
+		{% assign lnk = new.name | prepend: "phrases/" %}
+		<a class="prev" href="{% link {{lnk}}  %}">&laquo; {{ new.section }}</a>
+    {% endif %}
+	<a class="back" href="#top">Back to top</a>
+
+  {% if page.section < site.number_categories %}
+  	{% assign num = page.section | plus: 1 %}
+  {% else %}
+  	{% assign num = 1 %}
+  {% endif %}
+	{% assign new = site.data.categories | where: "secnum",num | first %}
+	{% if new.name.size > 0 %}
+		{% assign lnk = new.name | prepend: "phrases/" %}
+		<a class="next" href="{% link {{lnk}}  %}"> {{ new.section }} &raquo;</a>
+	{% endif %}
+</div>
