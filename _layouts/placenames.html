@@ -1,0 +1,33 @@
+---
+layout: page
+---
+
+{{content}}
+
+
+{% assign curdialect = "" %}
+{% for row in site.data.placenames %}
+
+{% if row.dialect != curdialect %}
+	<h2>{{row.dialect}} Dialect Names</h2>
+	{% assign curdialect = row.dialect %}
+{% endif %}
+
+<div class="audiobox">
+	<div class="text">
+		<span class="den">{{row.den}}</span><br/>
+		<span class="eng">{{row.eng}}</span>
+		{% if row.lit %}
+			<br>({{row.lit}})
+		{% endif %}
+	</div>
+   	<div class="audio">
+   		{% if row.audio %}	
+				<audio src="{{site.baseurl}}/{{site.audiopath}}/placenames/{{row.audio}}" controls type="audio/mpeg">Your browser does not support the audio tag.</audio>
+				{% if row.speaker %}
+					<br>Speaker: {{row.speaker}}
+				{% endif %}
+		{% endif %}
+   </div></div> 
+	<hr/>
+{% endfor %}

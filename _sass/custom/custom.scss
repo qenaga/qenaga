@@ -1,0 +1,83 @@
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+.PageNavigation a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+.PageNavigation .next {
+  text-align: right;
+}
+
+.PageNavigationBottom {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+.PageNavigationBottom a {
+  display: block;
+  width: 33%;
+  float: left;
+  margin: 1em 0;
+}
+.PageNavigationBottom .next {
+  text-align: right;
+}
+
+.PageNavigationBottom .back {
+	text-align: center;
+}
+
+.den {font-weight: bold; }
+.eng {font-style: italic; }
+
+#info {
+  background-color: #cfc ;
+  padding: 10px ;
+  border: 10px  ;
+}
+
+// audio side-by-side
+
+.audiobox {
+	//display: block;
+	text-align: left;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+.audiobox .audio {
+	display: inline-block;
+}
+.audiobox .text {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: large;
+	width: 50%;
+}
+
+.audiobox .lettertext {
+	display: inline-block;
+	margin-right: 10px;
+	font-size: large;
+	width: 30%;
+}
+
+.audiobox .letter {
+	display: inline-block;
+	text-align: top;
+	font-size: xx-large;
+	width: 10%;
+	margin-right: 10px;
+}
+
+.fineprint {
+	font-color: #ddd;
+	font-size: small;
+	line-height: 0;
+}

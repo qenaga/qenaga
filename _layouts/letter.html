@@ -1,0 +1,69 @@
+---
+layout: default
+---
+
+
+{{content}}
+
+<h1>{{ page.den }}</h1>
+
+<h2>{{ page.title }}</h2>
+
+	<div class="audiobox">
+   <div class="audio"><audio src="{{site.baseurl}}/{{site.audiopath}}/{{page.audio}}" controls type="audio/mpeg">Your browser does not support the audio tag.</audio>
+   </div></div> 
+
+{% if page.note %}
+<div id="note">{{page.note}}</div>
+{% endif %}
+
+<table border = "0" cellpadding="3">	
+{% assign theexamples = site.data.keywords | where:"num",page.number %}
+{% for row in theexamples %}
+<tr><td><span class="den">{{row.den}}</span></td>
+<td><span class="eng">{{row.eng}}</span></td></tr>
+{% endfor %}
+</table>
+
+{% comment %}
+{% assign themonth = site.data.months | where:"number",page.month | first %}
+{% if thesection > 1 %}
+	{% assign prevsection = thesection | minus: 1 %}
+	{% assign prevmonthshort = themonth.short %}
+{% else %}
+	{% if page.month > 1 %}
+		{% assign prevmonth = page.month | minus:1 %}
+	{% else %}
+		{% assign prevmonth = site.number_lessons %}
+	{% endif %}
+	{% assign thelessons = site.data.lessons | where: "month",prevmonth | sort:"lesson" | last %}
+	{% assign prevsection = thelessons.lesson %}
+	{% assign prevmonthshort =  themonth.prev %}
+{% endif %}
+{% assign prevlink =  prevmonthshort  | append: prevsection | append: ".md" | prepend: "lessons/" %}
+
+{% comment %} Get highest lesson number {% endcomment %}
+{% assign thelessons = site.data.lessons | where: "month",page.month | sort:"lesson" | last %}
+{% assign maxsection = thelessons.lesson | to_integer %}
+{% if thesection < maxsection %}
+	{% assign nextsection = thesection | plus:1 %}
+	{% assign nextmonthshort = themonth.short %}
+{% else %}
+  {% if page.month < site.number_lessons %}
+  	{% assign nextmonth = page.month | plus: 1 %}
+  {% else %}
+  	{% assign nextmonth = 1 %}
+  {% endif %}
+  {% assign nextsection = 1 %}
+  {% assign nextmonthshort = themonth.next %}
+{% endif %}
+{% assign nextlink =  nextmonthshort  | append: nextsection | append: ".md" | prepend: "lessons/" %}
+
+
+<div class="PageNavigation">
+
+		<a class="prev" href="{% link  {{prevlink}} %}">&laquo; Prev </a>
+
+		<a class="next" href="{% link {{nextlink}}  %}"> Next &raquo;</a>
+</div>
+{% endcomment %}

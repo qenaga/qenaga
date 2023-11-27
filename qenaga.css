@@ -1,0 +1,265 @@
+/* Stylesheet for the Dena'ina Qenaga website
+Developed by the Dena'ina Archiving, Traning and Access Project
+National Science Foundation grant NSF-OPP 0326805   */
+
+/*Created By Sadie Williams October 2005*/
+
+
+/*----------------- text---------------*/
+body, td, p, li, ul
+	{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;    /* Please keep this at 11 pt. Many users will find an 11 pt default difficult to read. We may want to consider including an explanation of how to change font size in a kind of user guide. (This should include info about QT audio as well.   --gmh 10/15/05    */
+	}
+
+.warning   /* background color for notes/warning in language structure section   */
+	{
+	background-color:"#FFCC33";
+	}
+
+
+.fineprint
+	{
+		font-size: 9pt;
+	}
+
+td.highlight   /* background highight, as specified in the table.chart spec */
+	{
+	background-color:"#E8E7D9";
+	}
+
+h1,	h2, h3, h4, h5
+{
+	font-weight:500;
+}
+h1
+{
+	font-size: 17pt;
+}
+h2
+{
+	font-size: 15pt;
+}
+h3
+{
+	font-size: 13pt;
+}
+hr {
+	color:#CC6600;
+	background-color:#CC6600;
+	height:1px;
+}
+/* fonts to distinguish Dena'ina text and English glosses */
+.den
+{
+	font-weight:bold;
+}
+.eng
+{
+	font-weight: normal
+}
+/*used for instructions in the Archive pages*/
+.instr	{
+	color:#CC3300;
+}
+.fineprint
+{
+	font-size: 9pt;
+}
+.biblio
+{
+	text-indent: -25px;   /* I'm not sure this attribute works --gmh */
+}
+.small
+{
+	font-size: smaller;
+}
+/* used for glossing text */
+.smallcaps
+{
+	font-size: smaller;
+	text-transform: uppercase;
+}
+/*was the lighter orange background - no longer orange... used throughout qenaga.org pages */
+/* changed the name from orange2 to "shade"  --gmh 10/19/05 */
+.shade
+{
+	background-color:#E8E7D9;
+}
+/* anchor styles */
+a:link {  color:#660000; text-decoration: none;}
+a:active {  color: #DA8247; text-decoration: none;}
+a:visited {  color: #8F6345; text-decoration: none;}
+a:hover { color:#FF9933; }
+
+/*styled tables in qenaga pages*/
+/* why do we need styled table???????  --gmh 10/15/05   */
+
+table.chart
+	{
+		border:0;
+	}
+table.chart td
+	{
+	background-color:#E8E7D9;
+	padding: 5px;
+	}
+table.chart caption
+	{
+	/*  width:100%;    this seems redundant -- gmh 10/15/05 */
+	margin-bottom:5px;
+	}
+table.chart th
+	{
+	background-color:#E8E7D9;
+	padding: 5px;
+	}
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+
+/* -------------- structure divs---------------*/
+
+/*Sadie's thoughts in process.... not going to fully implement!*/
+/* Are these thoughts still in progress????  --gmh 10/15/05 */
+
+
+#banner {
+width:100%;
+/* background-image:url(http://web.archive.org/web/20070717031213/http://qenaga.org/images/kijik-wide.gif); */
+background-image:url(http://qenaga.org/images/kijik-wide.gif);
+/* padding-top: 100px; */
+padding: 100px 0px 0px 0px;
+background-repeat: no-repeat;
+visibility: inherit;
+clip: rect(auto auto auto auto);
+overflow: hidden;
+}
+
+#banner-archive {
+width:100%;
+/* background-image:url(http://web.archive.org/web/20070717031213/http://qenaga.org/images/archive-wide.gif); */
+background-image:url(http://qenaga.org/images/archive-wide.gif);
+padding: 100px 0px 0px 0px;
+background-repeat: no-repeat;
+visibility: inherit;
+clip: rect(auto auto auto auto);
+overflow: hidden;
+/* background-repeat: no-repeat; */
+}
+
+
+/*left side content - holds local navigation */
+#leftblock
+{
+float: left;
+padding-top: 40px;
+width: 25%;
+}
+
+/*right side content*/
+#rightblock
+{
+padding-left: 25%;
+padding-top: 20px;
+padding-right: 5%;
+}
+
+/*used when no left side is needed*/
+#fullpage
+{
+padding-right:10%;
+padding-left:10%;
+padding-top: 20px;
+}
+
+/*---------------------------------------------------------------------*/
+/*  local navigation on left side of page*/
+
+#left-nav{
+	margin: 0 auto;
+	padding-left: 0;
+	border-bottom: 1px solid gray;
+	width: 70%;
+}
+#left-nav ul{
+	margin: 0;
+	padding: 0;
+}
+#left-nav li
+{
+	list-style: none;
+	margin: 0;
+	padding: 0.25em;
+	border-top: 1px solid gray;
+	font-size: 9pt;
+}
+#left-nav li a { text-decoration: none; }
+/*  #left-nav li a { text-decoration: none; font-size:8pt; }  */
+/*  font-size spec moved out of anchor tag    */
+#left-nav a:hover {color:#CC6600; }
+#left-nav a#current{color:black;}
+
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
+/*top menu bar - adapted from  http://css.maxdesign.com.au/listamatic */
+
+#nav
+{
+margin:0 0 10px 0;
+width: 100%;
+float:right;
+background-color:#3A310E;
+border-top-color:#000000;
+border-top:2px solid #000000;
+}
+#nav ul li
+	{
+	display: inline;
+	font-size: 8pt;   /*  moved font-size spec here --gmh 10/15/05 */
+	}
+#nav ul
+	{
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-size: 10pt;
+	letter-spacing: 1px;
+	font-weight: bold;
+	}
+#nav a#current
+	{
+	background-color: #998762;
+	color:#D7CFBF;
+	}
+#nav ul li a
+	{
+	padding: 0.2em 12px;
+	background-color:#3A310E;
+	color: white;
+	/* font-size: 7pt;  moved to li spec -- gmh 10/15/05 */
+	text-decoration: none;
+	float: right;
+	border-right: 1px solid #555753;
+}
+#nav ul a:hover
+{
+background-color: #C0B59C;
+color: #555753;
+}
+
+/* found this sitting in texts/denlife.html;
+   it doesn't seem to be used */
+.big {
+font-size:16pt;
+}
+
+/* page navigation for Dena'ina phrases */
+.phrase_nav {
+	font-size: small;
+	margin-left: 20px;
+}
+
+/*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/

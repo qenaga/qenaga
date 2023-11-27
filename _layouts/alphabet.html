@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+{{ content }}
+
+{% for row in site.data.alphabet %}
+<hr>
+<div class="audiobox">
+	<div class="letter">{{row.letter}}</div>
+
+	<div class="lettertext">
+	<span class="den">{{ row.den }}</span><br/>
+	<span class="eng">{{ row.eng }}
+	</div>
+
+	<div class="audio"><audio src="{{site.baseurl}}/{{site.audiopath}}/alphabet/{{row.audio}}" controls type="audio/mpeg">Your browser does not support the audio tag.</audio>
+	</div> 
+
+</div>
+
+{% endfor %}
+
+

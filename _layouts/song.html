@@ -1,0 +1,25 @@
+---
+layout: page
+---
+
+{% if page.den %}
+	<h1>{{ page.den }}</h1>
+	<h2>{{ page.eng }}</h2>
+{% else %}
+	{%if page.eng %}
+		<h1>{{ page.eng }}</h1>
+	{% else %}
+		<h2>{{ page.eng }}</h2>
+	{% endif %}
+{% endif %}
+
+{% if page.audio %}
+<div class="audiobox">
+	<div class="audio"><audio src="{{site.baseurl}}/{{site.audiopath}}/{{page.audio}}" controls type="audio/mpeg">Your browser does not support the audio tag.</audio>
+	</div> 
+</div>
+{% endif %}
+
+
+{{ content }}
+
