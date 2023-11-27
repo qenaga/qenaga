@@ -10,6 +10,7 @@ exclude:
     - scripts/
     - assets/wav
     - html/
+    - stories
 
 
 #aux_links:
