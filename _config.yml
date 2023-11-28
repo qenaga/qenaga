@@ -2,7 +2,7 @@ title: Dena'ina Qenaga
 description: 
 theme: just-the-docs
 
-url: https://qenaga.github.io
+url: https://qenaga.org
 
 audiopath: "assets/audio"
 
@@ -12,9 +12,11 @@ exclude:
     - html/
     - stories
 
+# fav_icon:
+# logo: 
 
 #aux_links:
-#  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
 
 back_to_top: true
 
