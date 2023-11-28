@@ -1,7 +1,7 @@
 ---
 title: Dictionary
 parent: Learning
-nav_order: 
+nav_order: 8
 image: dtd.jpg
 permalink: learning/dtd
 credit: "Excerpted from the *Dena'ina Topical Dictionary*, edited by James Kari."

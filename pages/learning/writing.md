@@ -1,7 +1,7 @@
 ---
 title: Writing
 parent: Learning
-nav_order: 4
+nav_order: 5
 image: writing.jpg
 permalink: learning/writing
 credits: "Compiled by Gary Holton 15 Oct 2005."

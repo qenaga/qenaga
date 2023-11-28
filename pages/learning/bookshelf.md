@@ -1,7 +1,7 @@
 ---
 title: Bookshelf
 parent:  Learning
-nav_order: 14
+nav_order: 7
 image: learning.jpg
 permalink: learning/bookshelf
 ---

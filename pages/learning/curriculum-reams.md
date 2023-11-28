@@ -6,17 +6,29 @@ image: curriculum.jpg
 permalink: learning/curriculum-reams
 ---
 
+{: .info}
+<img src="{{site.baseurl}}/images/construction.gif" alt="construction" hspace="10" align="absmiddle">This page is under construction.
 		
-<p>Wanda Reams is currently working for the Kenaitze Indian Tribe developing language curriculum and materials under their ANA Grant.  Wanda's curriculum and language materials are available in the Dena'ina Qenaga Digital Archive (<a href="archive/browse-2.cfm?ResourceID=1636">Dena'ina Language Lessons</a>, <a href="archive/browse-2.cfm?ResourceID=1638">Ch'aduch' Q'u Qiz'un?</a>, <a href="archive/browse-2.cfm?ResourceID=1637">Shdesnaqa' Bacha'ina</a>, <a href="archive/browse-2.cfm?ResourceID=1639"> 	Ggagga Dghili Jenghiyu</a>).</p>  
+## Dena'ina Language Curriculum
 
-<p>Excerpts from the lessons are shown below. Each lesson includes an objective, materials needed, vocabulary, references, the lesson plan and corresponding activities.  The excerpts have been modified from the original, although the content remains intact.</p>
-<p>If you are interested in making your Dena'ina Language Materials available on this website, please email denaina.qenaga@gmail.com .</p>
-<h2>Adult Lessons</h2>
-<p>The Adult Lessons are a set of introductory lessons inncluding lessons on the sound system with sound chart, greetings, introductions, chi words, body parts, weather, family and numbers.  Below is an excerpt of a lesson on introductions:</p>
-<b>Lesson 1-C- Dena'ina Introduction</b><br />
+Wanda Reams is currently working for the Kenaitze Indian Tribe developing language curriculum and materials under their ANA Grant.  Wanda's curriculum and language materials are available in the Dena'ina Qenaga Digital Archive (<a href="archive/browse-2.cfm?ResourceID=1636">Dena'ina Language Lessons</a>, <a href="archive/browse-2.cfm?ResourceID=1638">Ch'aduch' Q'u Qiz'un?</a>, <a href="archive/browse-2.cfm?ResourceID=1637">Shdesnaqa' Bacha'ina</a>, <a href="archive/browse-2.cfm?ResourceID=1639"> 	Ggagga Dghili Jenghiyu</a>).
+
+Excerpts from the lessons are shown below. Each lesson includes an objective, materials needed, vocabulary, references, the lesson plan and corresponding activities.  The excerpts have been modified from the original, although the content remains intact.
+
+If you are interested in making your Dena'ina Language Materials available on this website, please email denaina.qenaga@gmail.com .
+
+
+## Adult Lessons
+
+The Adult Lessons are a set of introductory lessons inncluding lessons on the sound system with sound chart, greetings, introductions, chi words, body parts, weather, family and numbers.  Below is an excerpt of a lesson on introductions:
+
+###Lesson 1-C- Dena'ina Introduction
+
 <i>Objective</i>: TLW (The learner will) hear Dena’ina and demonstrate understanding by repeating the given sounds (words).
 <i>Materials needed</i>: Display of introduction on poster board, large posters of father/mother/grandfather/grandmother with Dena’ina word below. Computer with internet capabilities, Kenai-Dena’ina Sound System and Vocabulary by Dr. Boraas, Kenai Key Words by Dr. Kari.
+
 <i>Age</i>: adult
+
 <ol>
 <li>
 In the Dena’ina way it is proper to introduce oneself before conversation. This lesson contains the necessary elements for a formal Dena’ina introduction.  The introductions let the elders know who you are in relation to your parents and the community.</li>
@@ -29,6 +41,7 @@ In the Dena’ina way it is proper to introduce oneself before conversation. Thi
 <li> Teach Dena’ina song for the day.</li>
 <li>Q’u shi cha. ( "That’s all.''?)</li>
 </ol>
+
 <p class="fineprint">Note: At the start of each remaining class have each student introduce themselves in Dena’ina.</p>
 
 <table class="chart" align="center">
