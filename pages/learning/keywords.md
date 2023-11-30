@@ -18,7 +18,7 @@ CD-ROM version are available from Dena'inaq' Titaztunt.
 Not all dialect versions are currently available online.
 
 
-- [Upper Inlet Keywords](http://qenaga.github.io/sava)  by Sava Stephan
+- [Upper Inlet Keywords](http://keywords.qenaga.org/upperinlet)  by Sava Stephan
 - Iliamna Keywords by Walter Johnson
 - Inland Keywords by Helen Dick
 - Kenai (Outer Inlet) Keywords by Fedosia Sacaloff, Bertha Monfor, and Peter Kalifornsky
